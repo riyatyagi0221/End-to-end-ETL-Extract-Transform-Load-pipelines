@@ -3,7 +3,12 @@
 Largest Banks ETL Pipeline
 
 An automated ETL (Extract, Transform, Load) pipeline built in Python that compiles the top 10 largest banks in the world by market capitalization, converts the figures into multiple currencies, and stores the results in both CSV and SQLite database formats — designed to be re-run automatically every financial quarter.
+
+
 Project Scenario
+Built as a data engineer would for a research organization: a repeatable script that scrapes bank market cap data, transforms it using live exchange rates, and produces a report-ready dataset each quarter with zero manual work.
+
+
 
 Pipeline Overview\
 Extract	Scrapes the "By market capitalization" table from an archived Wikipedia snapshot using requests + BeautifulSoup, producing Name and MC_USD_Billion columns.
@@ -19,7 +24,10 @@ Query	Runs SQL queries against the database: full table dump, average market cap
 
 
 
+
+
 Project Parameters
+
 
 Parameter	Value
 
@@ -32,6 +40,12 @@ Exchange rate source	CSV file (Currency, Rate columns)
 Extracted columns	Name, MC_USD_Billion
 
 Final columns	Name, MC_USD_Billion, MC_GBP_Billion, MC_EUR_Billion, MC_INR_Billion
+
+Output CSV	./Largest_banks_data.csv
+
+Database	Banks.db
+
+Table name	Largest_banks
 
 Log file	code_log.txt
 
