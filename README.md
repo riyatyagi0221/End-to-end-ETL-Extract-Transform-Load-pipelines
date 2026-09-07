@@ -12,6 +12,7 @@ Transform	Reads exchange rate data (exchange_rate.csv) and adds MC_GBP_Billion, 
 Load	Saves the final table to Largest_banks_data.csv and to a Largest_banks table inside a SQLite database (Banks.db).
 Query	Runs SQL queries against the database: full table dump, average market cap in GBP, and the top 5 bank names.
 Project Parameters
+
 Parameter	Value
 Code name	banks_project.py
 Data source	Archived Wikipedia "List of largest banks" page
@@ -24,15 +25,13 @@ Tech Stack & Skills
 Language: Python
 Libraries: requests, beautifulsoup4, pandas, numpy, sqlite3
 Skills demonstrated: Web Scraping, REST APIs, ETL pipeline design, Data Transformation, Data Wrangling, Data Pipelines, Database Management, SQL querying, Programming Principles, Maintainability (structured logging), HTML parsing
+
 How to Run
+
 Install dependencies:
    pip install requests beautifulsoup4 pandas numpy
 Make sure exchange_rate.csv is in the same folder as the script.
+
 Run the pipeline:
    python banks_project.py
 The script will print the extracted and transformed data, save Largest_banks_data.csv, create/update Banks.db, run the sample queries, and log every stage to code_log.txt.
-Sample Output (top 3 rows)
-Name	MC_USD_Billion	MC_GBP_Billion	MC_EUR_Billion	MC_INR_Billion
-JPMorgan Chase	432.92	346.34	402.62	35910.71
-Bank of America	231.52	185.22	215.31	19204.58
-Industrial and Commercial Bank of China	194.56	155.65	180.94	16138.75
