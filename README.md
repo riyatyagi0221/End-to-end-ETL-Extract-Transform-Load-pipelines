@@ -31,23 +31,23 @@ Project Parameters
 
 Parameter	Value
 
-Code name	banks_project.py
+Code name:	banks_project.py
 
-Data source	Archived Wikipedia "List of largest banks" page
+Data source:	Archived Wikipedia "List of largest banks" page
 
-Exchange rate source	CSV file (Currency, Rate columns)
+Exchange rate: source	CSV file (Currency, Rate columns)
 
-Extracted columns	Name, MC_USD_Billion
+Extracted columns:	Name, MC_USD_Billion
 
-Final columns	Name, MC_USD_Billion, MC_GBP_Billion, MC_EUR_Billion, MC_INR_Billion
+Final columns:	Name, MC_USD_Billion, MC_GBP_Billion, MC_EUR_Billion, MC_INR_Billion
 
-Output CSV	./Largest_banks_data.csv
+Output CSV: ./Largest_banks_data.csv
 
-Database	Banks.db
+Database:	Banks.db
 
-Table name	Largest_banks
+Table name:	Largest_banks
 
-Log file	code_log.txt
+Log file:	code_log.txt
 
 
 
